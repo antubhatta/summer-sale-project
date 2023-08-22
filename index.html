@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer Sale Assignment</title>
+    <html data-theme="cupcake"></html>
+    <!-- daisyUi and tailwind css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind custom design  -->
+    <style>
+      .font-work-sans {
+        font-family: "Work Sans", sans-serif;
+      }
+      ::placeholder {
+        color: #11111166;
+        font-size: 20px;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body class="font-work-sans">
+    <!-- header related section -->
+    <header class="bg-[#F9F6E2]">
+      <div
+        class="flex flex-col lg:flex-row justify-center gap-7 lg:container lg:mx-auto"
+      >
+        <div class="text-center">
+          <h4
+            class="text-[#111] text-2xl lg:text-3xl font-medium mt-6 mb-4 md:mt-12 xl:mt-60 lg:mb-8"
+          >
+            ---SALE FEVER---
+          </h4>
+          <h3
+            class="lg:w-[650px] text-[#111] text-3xl lg:text-5xl font-bold mb-7 lg:mb-20"
+          >
+            Purchase TK 200 or <br />
+            above & get <span class="text-[#E527B2]">20% off</span>
+          </h3>
+          <div class="flex flex-row justify-center items-center gap-4">
+            <h3 class="text-[#111] text-2xl font-medium">Use Promo Code</h3>
+            <button class="bg-[#E527B2] text-white px-6 py-4 rounded-lg">
+              SELL200
+            </button>
+          </div>
+        </div>
+
+        <div class="flex lg:block items-center justify-center">
+          <img
+            class="xl:mt-20 lg:mb-20 w-[70%] lg:w-full"
+            src="./images/Summer 1.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+    <!-- main related section -->
+    <main class="bg-[#F8F8F8] lg:container lg:mx-auto px-6 md:px-0">
+      <!-- main container -->
+      <div class="flex flex-col sm:flex-row gap-6">
+        <!-- card -->
+        <div class="flex-1">
+          <h2 class="mt-28 text-[#111] text-4xl font-semibold mb-8">
+            Kitchenware
+          </h2>
+          <!-- kitchenwareCard -->
+          <div
+            class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <!-- first card -->
+            <div>
+              <div
+                onclick="cardClickBtn(this)"
+                class="card bg-[#FFF] rounded-lg"
+              >
+                <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                  <img src="./images/prod1.png" class="h-[109px] w-[136px]" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="flex mt-5">
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame2.svg" alt="" />
+                    <img src="./images/frame2.svg" alt="" />
+                  </div>
+                  <p
+                    class="product-name mt-2 text-[#111] text-xl font-semibold"
+                  >
+                    K. Accessories
+                  </p>
+                  <p
+                    class="product-price mt-2 mb-5 text-[#11111180] text-xl font-normal"
+                  >
+                    39.00 TK
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Second card -->
+            <div>
+              <div
+                onclick="cardClickBtn(this)"
+                class="card bg-[#FFF] rounded-lg"
+              >
+                <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                  <img src="./images/prod2.png" class="h-[109px] w-[136px]" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="flex mt-5">
+                    <img src="./images/frame2.svg" alt="" />
+                    <img src="./images/frame2.svg" alt="" />
+                    <img src="./images/frame2.svg" alt="" />
+                    <img src="./images/frame2.svg" alt="" />
+                    <img src="./images/frame2.svg" alt="" />
+                  </div>
+                  <p
+                    class="product-name mt-2 text-[#111] text-xl font-semibold"
+                  >
+                    K. Accessories
+                  </p>
+                  <p
+                    class="product-price mt-2 mb-5 text-[#11111180] text-xl font-normal"
+                  >
+                    25.00 TK
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- third card -->
+            <div>
+              <div
+                onclick="cardClickBtn(this)"
+                class="card bg-[#FFF] rounded-lg"
+              >
+                <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                  <img src="./images/prod3.png" class="h-[109px] w-[136px]" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="flex mt-5">
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame2.svg" alt="" />
+                  </div>
+                  <p
+                    class="product-name mt-2 text-[#111] text-xl font-semibold"
+                  >
+                    Home Cooker
+                  </p>
+                  <p
+                    class="product-price mt-2 mb-5 text-[#11111180] text-xl font-normal"
+                  >
+                    49.00 TK
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="mt-28 text-[#111] text-4xl font-semibold mb-8">
+            Sportswear
+          </h2>
+          <!-- SportswearCard -->
+          <div
+            class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            <!-- fourth card -->
+            <div>
+              <div
+                onclick="cardClickBtn(this)"
+                class="card bg-[#FFF] rounded-lg"
+              >
+                <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                  <img src="./images/prod4.png" class="h-[109px] w-[136px]" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="flex mt-5">
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame2.svg" alt="" />
+                    <img src="./images/frame2.svg" alt="" />
+                    <img src="./images/frame2.svg" alt="" />
+                  </div>
+                  <p
+                    class="product-name mt-2 text-[#111] text-xl font-semibold"
+                  >
+                    Sports Back Cap
+                  </p>
+                  <p
+                    class="product-price mt-2 mb-5 text-[#11111180] text-xl font-normal"
+                  >
+                    49.00 TK
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- fifth card -->
+            <div>
+              <div
+                onclick="cardClickBtn(this)"
+                class="card bg-[#FFF] rounded-lg"
+              >
+                <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                  <img src="./images/prod5.png" class="h-[109px] w-[136px]" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="flex mt-5">
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame2.svg" alt="" />
+                  </div>
+                  <p
+                    class="product-name mt-2 text-[#111] text-xl font-semibold"
+                  >
+                    Full Jersey Set
+                  </p>
+                  <p
+                    class="product-price mt-2 mb-5 text-[#11111180] text-xl font-normal"
+                  >
+                    69.00 TK
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- sixth card -->
+            <div>
+              <div
+                onclick="cardClickBtn(this)"
+                class="card bg-[#FFF] rounded-lg"
+              >
+                <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                  <img src="./images/prod6.png" class="h-[109px] w-[136px]" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="flex mt-5">
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame2.svg" alt="" />
+                    <img src="./images/frame2.svg" alt="" />
+                  </div>
+                  <p
+                    class="product-name mt-2 text-[#111] text-xl font-semibold"
+                  >
+                    Sports cates
+                  </p>
+                  <p
+                    class="product-price mt-2 mb-5 text-[#11111180] text-xl font-normal"
+                  >
+                    159.00 TK
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="mt-28 text-[#111] text-4xl font-semibold mb-8">
+            Furniture
+          </h2>
+          <!-- FurnitureCard -->
+          <div
+            class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-40"
+          >
+            <!-- seven card -->
+            <div>
+              <div
+                onclick="cardClickBtn(this)"
+                class="card bg-[#FFF] rounded-lg"
+              >
+                <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                  <img src="./images/prod7.png" class="h-[109px] w-[136px]" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="flex mt-5">
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame2.svg" alt="" />
+                  </div>
+                  <p
+                    class="product-name mt-2 text-[#111] text-xl font-semibold"
+                  >
+                    Single Relax Chair
+                  </p>
+                  <p
+                    class="product-price mt-2 mb-5 text-[#11111180] text-xl font-normal"
+                  >
+                    185.00 TK
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- eight card -->
+            <div>
+              <div
+                onclick="cardClickBtn(this)"
+                class="card bg-[#FFF] rounded-lg"
+              >
+                <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                  <img src="./images/prod8.png" class="h-[109px] w-[136px]" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="flex mt-5">
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                  </div>
+                  <p
+                    class="product-name mt-2 text-[#111] text-xl font-semibold"
+                  >
+                    Children play
+                  </p>
+                  <p
+                    class="product-price mt-2 mb-5 text-[#11111180] text-xl font-normal"
+                  >
+                    299.00 TK
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- nine card -->
+            <div>
+              <div
+                onclick="cardClickBtn(this)"
+                class="card bg-[#FFF] rounded-lg"
+              >
+                <figure class="bg-[#1111110D] pb-8 pt-12 mx-5 mt-5 rounded-lg">
+                  <img src="./images/prod9.png" class="h-[109px] w-[136px]" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="flex mt-5">
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                    <img src="./images/frame1.svg" alt="" />
+                  </div>
+                  <p
+                    class="product-name mt-2 text-[#111] text-xl font-semibold"
+                  >
+                    Flexible Sofa
+                  </p>
+                  <p
+                    class="product-price mt-2 mb-5 text-[#11111180] text-xl font-normal"
+                  >
+                    339.00 TK
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- calculation -->
+        <div class="flex sm:block flex-col items-center justify-center mx-auto">
+          <div class="bg-[#FFF] rounded-lg pl-6">
+            <h3 class="sm:mt-[184px] mt-0 pb-4 pt-6 text-2xl font-medium">
+              Have coupon?
+            </h3>
+            <div class="flex items-center">
+              <input
+                id="coupon-field"
+                class="rounded-tl-lg rounded-bl-lg border border-solid border-[#11111126] mb-6 outline-none py-4 pl-4"
+                placeholder="Coupon code"
+                type="text"
+                name=""
+                id=""
+              />
+              <button
+                disabled
+                id="btn-apply"
+                class="bg-[#E527B2] border border-[#E527B2] rounded-tl-0 rounded-tr-lg rounded-br-lg mb-6 rounded-bl-0 text-white px-5 py-3 pb-5 mr-6 h-full disabled:cursor-not-allowed disabled:opacity-70"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+
+          <!-- make purchase part -->
+          <div class="w-full">
+            <div class="bg-[#FFF] rounded-lg pl-6 mt-6">
+              <ol
+                id="selected-product"
+                class="list-decimal font-medium text-2xl pt-6 pl-6"
+              ></ol>
+              <div
+                class="border-b w-[294px] border-[#11111126] mt-4 mb-4"
+              ></div>
+              <div class="text-2xl font-medium relative">
+                <h3>
+                  Total price:
+                  <span id="total-price" class="text-[#11111180]">0.00</span
+                  ><span class="text-[#11111180]">TK</span>
+                </h3>
+                <h3>
+                  Discount:
+                  <span id="discount" class="text-[#11111180]">0.00</span
+                  ><span class="text-[#11111180]">TK</span>
+                </h3>
+                <h3>
+                  Total:
+                  <span id="grand-total" class="text-[#11111180]">0.00</span
+                  ><span class="text-[#11111180]">TK</span>
+                </h3>
+                <div class="border-b w-[294px] border-[#11111126] mt-4"></div>
+                <!-- bonus modal start -->
+                <button
+                  onclick="my_modal_3.showModal()"
+                  disabled
+                  id="btn-purchase"
+                  class="w-[294px] bg-[#E527B2] text-white text-xl font-semibold py-4 rounded-lg translate-y-[50%] disabled:cursor-not-allowed disabled:opacity-70"
+                >
+                  Make Purchase
+                </button>
+                <dialog
+                  id="my_modal_3"
+                  class="modal modal-bottom p-4 mx-8 w-[90%] sm:modal-middle pb-24"
+                >
+                  <form method="dialog" class="modal-box">
+                    <figure class="flex justify-center pt-20">
+                      <img class="mb-7" src="./images/congo.png" />
+                    </figure>
+                    <h3 class="font-bold md:text-5xl text-3xl text-center mb-4">
+                      Congratulations
+                    </h3>
+                    <p class="pb-12 font-xl text-[#1111117F] text-center">
+                      Your Purchase the product
+                    </p>
+
+                    <div class="flex justify-center mb-24">
+                      <button
+                        id="btn-modal"
+                        class="rounded-lg bg-[#E527B2] text-xl font-semibold py-4 px-7 text-white"
+                      >
+                        Go Home
+                      </button>
+                    </div>
+                  </form>
+                </dialog>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/sale.js"></script>
+  </body>
+</html>
